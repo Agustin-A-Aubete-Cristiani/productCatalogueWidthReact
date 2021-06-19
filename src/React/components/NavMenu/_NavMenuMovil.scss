@@ -1,0 +1,54 @@
+.NavMenuMovil {
+  background-color: #ff0062;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 100%;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform .5s ease-in-out;
+  z-index: 1;
+  ul {
+    background-color: inherit;
+  }
+  li {
+    position: relative;
+    width: auto;
+    background-color: inherit;
+    > ul {
+      padding-left: 20px;
+    }
+  }
+  button {
+    padding: 7px 10px;
+    cursor: pointer;
+    background-color: inherit;
+    color: #fff;
+    transition: transform .3s ease-in-out;
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+  // .principalOptions {
+  //   & > li > button {
+  //       color: gold;
+  //       transform: none;
+  //   }
+  // }
+}
+button.notNavBtn {
+  // color: #00ff9d;
+  color: #fff;
+  &:hover {
+    transform: none;
+  }
+}
+
+.NavInViewPort {
+  transform: translateX(0);
+}
+
+.navBtn {
+  background: lime;
+  padding: 5px;
+}

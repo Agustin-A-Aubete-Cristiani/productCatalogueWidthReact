@@ -1,0 +1,48 @@
+.NavMenuNotMovil {
+  width: 100%;
+  max-width: 600px;
+  button {
+    font-size: 1rem;
+    background-color: #ff0062;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    width: 100%;
+    line-height: 30px;
+  }
+  li {
+    // background-color: #ff0062;
+    position: relative;
+    width: 100%;
+  }
+}
+@media (min-width: 900px) {
+  .NavMenuNotMovil {
+    width: 65%;
+  }
+}
+
+.principalOptions {
+  display: flex;
+  & ul {
+    display: none;
+  }
+  li:hover > ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 100%;
+  }
+  > li:hover > ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    button {
+      &:hover {
+        background-color: #2b0800;
+      }
+    }
+  }
+}

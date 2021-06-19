@@ -1,0 +1,37 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #ff0062;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .header {
+    justify-content: center;
+  }
+}
+.navBtn {
+  $btnSize: 2rem;
+  font-size: $btnSize;
+  line-height: $btnSize;
+  width: $btnSize;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  place-content: center;
+  margin-left: 10px;
+  &:hover {
+    color: #fff;
+  }
+}
