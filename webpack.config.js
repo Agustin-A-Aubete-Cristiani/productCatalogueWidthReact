@@ -48,12 +48,12 @@ module.exports = {
     path: path.resolve(__dirname + '/src/index.js')
   },
   output: {
-    path: path.resolve(__dirname + '/dist'),
+    path: path.resolve(__dirname + '/doc'),
     filename: 'app.[contenthash].js',
   },
   plugins: [
-    new HtmlWebpackPlugin({template: './public/index.html',}),
     new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({template: './public/index.html',}),
 ],
   module: {
     rules: [ 
