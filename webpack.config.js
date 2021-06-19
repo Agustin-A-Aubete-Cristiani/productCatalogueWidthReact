@@ -48,7 +48,7 @@ module.exports = {
     path: path.resolve(__dirname + '/src/index.js')
   },
   output: {
-    path: path.resolve(__dirname + '/doc'),
+    path: path.resolve(__dirname + '/docs'),
     filename: 'app.[contenthash].js',
   },
   plugins: [
